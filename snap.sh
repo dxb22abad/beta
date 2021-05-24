@@ -1,7 +1,7 @@
 #!/bin/bash
 date
 cd /root/snap2html/DiogenesList-master/
-python /root/snap2html/DiogenesList-master/diogeneslist.py /root/rclone/00 index
+python3 /root/snap2html/DiogenesList-master/diogeneslist.py /root/rclone/00 index
 sed -i "s#\[LINK ROOT\]#https://betadata.xb.workers.dev/0\:/#g"  /root/snap2html/DiogenesList-master/index.html
 sed -i "s#\[LINK PROTOCOL\]##g"  /root/snap2html/DiogenesList-master/index.html
 sed -i "s#\[SOURCE ROOT\]##g"  /root/snap2html/DiogenesList-master/index.html
